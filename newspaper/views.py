@@ -23,7 +23,7 @@ class HomeView(ListView):
     model = Post
     queryset = Post.objects.filter(
         status="active", published_at__isnull=False
-    ).order_by("-published_at")
+    ).order_by("-published_at")[:5]
     template_name = "aznews/main/home/home.html"
     context_object_name = "posts"
 

@@ -1,2 +1,4 @@
 Django==4.2
+django-summernote==0.8.20.0
+djangorestframework-3.16.0
 Pillow==11.2.1
